@@ -1,0 +1,57 @@
+/*tercer forma*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+h1 {
+    cursor: pointer;
+}
+* {
+    font-family: 'Roboto Slab', serif;
+}
+nav ul {
+    color: rgb(255, 0, 34) ;
+}
+nav ul li {
+    list-style: circle;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-style: italic;
+}
+
+/*propiedades de texto*/
+.text-right {
+    letter-spacing: 3px;
+    text-align: justify; /*left | right | */
+    word-spacing: 15px;
+    text-transform: capitalize /*lowercase | uppercase | capitalize*/;
+    text-decoration: line-through /*overline| underline |overline underline*/;
+    text-decoration-color: blueviolet;
+    text-decoration-style: solid /*wavy | double*/;
+}
+.text-right span {
+    word-spacing: 2px;
+}
+
+/*texto con sombra*/
+h3 {
+    font-family: 'Courier New';
+    text-shadow: 1px 1px royalblue;
+    font-weight: 700;
+}
+
+/*bordes*/
+section table {
+    border-left: 2px solid pink;
+    border-right: 2px solid red;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid green;
+}
+
+section table td {
+    border-left: 5px solid rgb(0, 255, 234);
+    border-right: 5px solid rgb(0, 255, 234);
+    border-bottom: 5px solid rgb(0, 255, 234);
+    border-top: 5px solid rgb(0, 255, 234);
+}
+/*agregar estilos para que los th tengan distintos colores de bordes*/
