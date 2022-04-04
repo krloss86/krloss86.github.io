@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*@import url();*/
+
+        h1::before {
+            content: '#';
+        }
+        h1::after {
+            content: '*';
+        }
+        h1 {
+            color: aquamarine;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: lowercase;
+        }
+        /*
+            font??
+        */
+        h2::first-letter {
+            border: 2px solid orange;
+        }
+
+        section p.clasep {
+            font-style: italic;
+        }
+        section p.clasep::before {
+            content: '--';
+        }
+        section p.clasep::after {
+            content: '**';
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="index.html">Volver</a>
+        </header>
+        <section>
+            <h1>Pseudoelementos</h1>
+            <h2>Sub titulo 2</h2>
+            <p class="clasep">texto adsdsad</p>
+        </section>
+    </main>
+</body>
+</html>

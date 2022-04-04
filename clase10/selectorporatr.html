@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*selectores por atributo*/     
+        [href] {
+            background-color: blueviolet;
+            text-decoration: none;
+        }
+        
+        /*elemento con contenido exacto*/
+        [href="nosotros"] {
+            background-color: yellow;
+        }
+        /*comience con algo*/
+        [href^="i"]{
+            background-color: aqua;
+        }
+        /*que contenga algo*/
+        [href*="s"] {
+            background-color: violet;
+        }
+        /*que termine con algo*/
+        [href$="l"] {
+            background-color: blue;
+            color: white;
+        }
+        /*
+        milik {
+            cursor: pointer;
+        }
+        */
+
+        img {
+            width: 150px;
+            height: 100px;
+        }
+        img[alt="s1"] {
+            border: 2px solid red;
+        }
+        img[alt="s2"] {
+            border: 2px solid gray;
+        }
+
+        .imagenes img[alt="s1"] {
+            border: 2px solid rgb(174, 255, 0);
+        }
+        .imagenes2 img[alt="s1"] {
+            border: 2px solid rgb(104, 108, 235);
+        }
+
+        .imagenes2 img[alt="s1"]:hover {
+            border-radius: 50%;
+        }
+        .imagenes img[alt="s2"]:hover {
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!--
+        <milik href="">hola</link>
+        -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="index">Home</a>
+                </li>
+                <li>
+                    <a href="nosotros">Nostros</a>
+                </li>
+                <li>
+                    <a href="contacto">Contacto</a>
+                </li>
+                <li>
+                    <a href="imagenes">Imagenes</a>
+                </li>
+                <li>
+                    <a href="email">Email</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="imagenes">
+            <img src="../clase9/lossimpson1.jpg" alt="s1">
+            <img src="../clase9/lossimpson.webp" alt="s2">
+        </div>
+        <div class="imagenes2">
+            <img src="../clase9/lossimpson1.jpg" alt="s1">
+            <img src="../clase9/lossimpson.webp" alt="s2">
+        </div>
+    </section>
+</body>
+</html>
