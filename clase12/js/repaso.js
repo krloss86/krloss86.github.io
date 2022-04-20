@@ -136,3 +136,4 @@ if(aux3) {
     console.log('false');
 }
 
+//guardar objeto
