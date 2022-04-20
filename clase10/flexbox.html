@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*maquetar sitios de manera mas facil*/
+        .container {
+            /*hacemos flexibles*/
+            display: flex; 
+            /*organizamos el contenido centrado*/
+            /* justify-content: center; */
+
+            /*organizamos el contenido*/
+            /* justify-content: space-around; */
+
+            /* justify-content: flex-end; */
+            justify-content: flex-start; 
+
+            /*alinear contenido verticalmente*/
+            align-items: center;
+
+            /*ajustar contenido al temaño de la pantalla*/
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap; */
+
+
+            /*COLUMNAS*/
+        }
+        img {
+            width: 200px;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+        .wrapper {
+            display: flex;
+        }
+        .left {
+            flex: 2;
+        }
+        .right {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- para usar flexbox debemos usar un div contenedor-->
+        <img src="../simpson.jpg">
+        <p>Texto en medio</p>
+        <img src="../simpson.jpg">
+        <img src="../simpson.jpg">
+    </div>
+
+    <section class="wrapper">
+        <article class="left">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptas dolorum error quod, vel temporibus expedita dignissimos ipsa voluptatibus at, tempore accusantium modi! Quod dolorem dolor, voluptate nisi ipsa sequi.</p>
+        </article>        
+        <article class="right">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo voluptas dolorum error quod, vel temporibus expedita dignissimos ipsa voluptatibus at, tempore accusantium modi! Quod dolorem dolor, voluptate nisi ipsa sequi.</p>
+        </article>        
+    </section>
+</body>
+</html>

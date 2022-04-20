@@ -1,0 +1,23 @@
+/*
+* {
+    background-color: blue;
+}
+*/
+
+/*esto es un comentario de una sola linea, CSS */
+/*y estoy usando css interno*/
+body {
+    background-color: aqua;
+}
+
+.container {
+    background-color: rgb(207, 169, 169);
+}
+
+.classsection {
+    background-color: yellow;
+}
+
+.header {
+    background-color: antiquewhite;
+}

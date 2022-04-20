@@ -18,6 +18,64 @@
     -->
     <!--ahora vinculo mi css al html-->
     <link rel="stylesheet" href="styles.css">
+    <style>
+
+        /*selector de atributo*/
+        [href] {
+            background-color: blueviolet;
+            text-decoration: line-through;
+        }
+        /*atributos que sea exactamente con algo*/
+        [href="#nosotros"] {
+            background-color: orange;
+        }
+
+        /*comience algo*/
+        [href^="#a"]{
+            background-color: aqua;
+        }
+        /*que contenga algo*/
+        [href*="a"] {
+            background-color: aqua;
+        }
+        /*finalice con algo*/
+        [href$="s"]{
+            background-color: blue;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*hijo o hermano siguiente*/
+        section .hijo1 + .hijo2{
+            color: rgb(253, 28, 28);
+        }
+
+        /*ejercicio obligatrior*/
+        .divBox {
+            width: 100%;
+            border: 1px solid black;
+            background-color: aqua;
+            padding: 5px;
+            border: 1px solid yellow;
+        }
+        .divBoxContainer {
+            height: 150px;
+            margin-left: 5px;
+            display: inline-block;
+            width: 23%;
+        }
+        .divBox .divRed {
+            background-color: red;
+            color: yellow;
+        }
+        .divBox .divBlack {
+            color: white;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -70,7 +128,8 @@
         </section>
         <section id="nosotros">
             <h2>Seccion sobre nosotros</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
+            <p class="hijo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
+            <p class="hijo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
         </section>
         <section id="contacto">
             <h2>contacto</h2>
@@ -83,6 +142,20 @@
         <section id="articulos">
             <h2>articulos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque excepturi, possimus, corrupti repudiandae cupiditate laborum totam dolore odit sequi quas ex tempora quos ipsam commodi nemo eum porro voluptates qui!</p>
+        </section>
+        <section class="divBox">
+            <div class="divBoxContainer divRed">
+                <h1>uno</h1>
+            </div>
+            <div class="divBoxContainer divBlack">
+                <h1>dos</h1>
+            </div>
+            <div class="divBoxContainer divRed">
+                <h1>tres</h1>
+            </div>
+            <div class="divBoxContainer divRed">
+                <h1>cuatro</h1>
+            </div>
         </section>
     </main>
 </body>

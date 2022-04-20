@@ -1,0 +1,34 @@
+/*
+* {
+    background-color: blue;
+}
+*/
+
+/*esto es un comentario de una sola linea, CSS */
+/*y estoy usando css interno*/
+body {
+    background-color: aqua;
+}
+
+/*aplicar estilo por id, usando #<id>*/
+#idsection{
+    background-color: blueviolet;
+}
+
+#nav {
+    background-color: beige;
+}
+
+/*estilo por clases, .<nombreDeLaClase>*/
+.links {
+    color: rgb(255, 0, 179);
+}
+
+/*selector etiqueta*/
+a {
+    text-decoration: none;    
+}
+
+#linkActive {
+    color: burlywood;
+}

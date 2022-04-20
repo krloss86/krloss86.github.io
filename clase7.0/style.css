@@ -1,0 +1,48 @@
+/* comentario linea */
+
+/*
+    comentario multilinea
+*/
+
+/*
+    TEMA SELECTORES
+    tipos:
+    selectores simples
+    elemetales / de atributos
+
+    elemtales:  univesal *{}
+                de tipo o etiqueta ej: body {}
+*/
+
+/*
+* {
+    background-color: rgb(180, 80, 150);
+}
+*/
+body {
+    background-color: rgb(180, 153, 80);
+}
+
+/*aplicar estilos classes*/
+#header {
+    background-color: rgb(0, 255, 55);
+}
+
+/*aplicar estilos a un selector por id*/
+#nav {
+    background-color: chocolate;
+}
+
+/*aplicar estilos por clases*/
+.cabecera {
+    background-color: darkkhaki;
+}
+
+/*PARA INDEX2.HTML*/
+.contenedor {
+    background-color: rgb(107, 189, 111);
+}
+
+.section {
+    background-color: pink;
+}
